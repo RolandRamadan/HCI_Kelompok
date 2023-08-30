@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F9F3DF;
+    position: relative;
+    max-width: 1600px;
+    height: 720px;
+}
+
+.header {
+    font-size: 125%;
+    background-color: #476258;
+}
+
+.headerMenu{
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+.headerText{
+    font-family: 'Jacques Francois';
+}
+
+.headerMenu :first-child{
+    margin-right: auto;
+}
+
+.headerMenu :hover{
+    background-color: white;
+    color: #476258;
+}
+
+.headerLink {
+    padding: 2rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    display: block;
+}
+
+.dropDownMenu {
+    margin-left: 10px;
+    display: none;
+}
+
+.HamburgerIcon {
+    margin-top: 1px;
+    width: 25px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropDownTable {
+    background-color: #476258;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    min-width: 120px;
+}
+
+.dropDownTable a {
+    color: white;
+    padding: 10px 12px;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Jacques Francois';
+}
+
+.dropDownButton {
+    padding: 8px;
+    background-color: #476258;
+    cursor: pointer;
+    border: none;
+}
+
+.dropDownTable a:hover {
+    background-color: white;
+    color: #476258;
+    border-radius: 5px;
+}
+
+.dropDownMenu:hover .dropDownTable {
+    display: block;
+}
+
+.dropDownMenu:hover .dropDownTable {
+    background-color: #476258;
+}
+
+.awalan{
+    left: auto;
+    right: 35%;
+    position: absolute;
+    font-family: 'Jacques Francois';
+    font-size: xx-large;
+}
+
+.content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentContainer {
+    width: 60%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.container label {
+    font-size: 18px;
+    color: #9D897B;
+    margin-bottom: 5px;
+}
+
+.container input {
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 20px;
+    border-color: #9D897B;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.container select {
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    height: 40px;
+    border-color: #9D897B;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.errorMsg {
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+
+.submitBtn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitBtn input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 2px;
+    border: none;
+    background-color: #9D897B;
+    color: white;
+}
+
+.submitBtn input:hover {
+    cursor: pointer;
+    background-color: #9D897B;
+    color: white;
+    border: solid 3px black;
+}
+
+.footer{
+    position: relative;
+    margin-top: 100px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #9D897B;
+}
+
+.footerMenu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footerLogo{
+   margin: 5px 30px;
+   display: inline-block;
+}
+
+.before{
+    height: 50px; 
+    width: 50px;
+}
+
+.after{
+    height: 50px; 
+    width: 50px;
+}
+
+.footerLogo .after {
+    display: none;
+}
+
+.footerLogo :hover .after{
+    display: inline;
+}
+
+.footerLogo :hover .before{
+    display: none;
+}
+
+.copyRight{
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.inputMenu{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+}
+
+.inputText{
+    border: #9D897B solid 2px;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.agreeSubmit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    top: 70px;
+    /* width: 20px;
+    height: 20px; */
+}
+
+@media screen and (max-width: 800px){
+    .headerMenu{
+        flex-direction: column;
+        display: none;
+    }
+    .dropDownMenu {
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .awalan{
+        left: auto;
+        right: 25%;
+        position: absolute;
+        font-family: 'Jacques Francois';
+        font-size: xx-large;
+    }
+    
+}

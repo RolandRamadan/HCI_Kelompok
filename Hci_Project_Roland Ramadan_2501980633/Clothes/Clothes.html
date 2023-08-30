@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <link rel="stylesheet" href="ClothesStyle.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="header">
+        <div class="headerMenu">
+            <div class="headerText"><a href="../Home/Home.html" class="headerLink">M&T</a></div>
+            <div class="headerText"><a href="../Clothes/Clothes.html" class="headerLink">Clothes</a></div>
+            <div class="headerText"><a href="../AboutUs/AboutUs.html" class="headerLink">About Us</a></div>
+            <div class="headerText"><a href="../Location/Location.html" class="headerLink">Location</a></div>
+            <div class="headerText"><a href="../Subscribe/Subscribe.html" class="headerLink">Subscribe</a></div>
+        </div>
+        <div class="dropDownMenu">
+            <button class="dropDownButton">
+                <img class = "HamburgerIcon" src="../Images/HamburgerIcon.png">
+            </button>
+            <div class="dropDownTable">
+                <a href="../Home/Home.html">Home</a>
+                <a href="../Clothes/Clothes.html">Clothes</a>
+                <a href="../AboutUs/AboutUs.html">About Us</a>
+                <a href="../Location/Location.html">Location</a>
+                <a href="../Subscribe/Subscribe.html">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="choose">
+        <div class="chooseText"> 
+            <a href="" class="chooseLink">Choose</a>
+            <img src="../Images/Segitiga.png" class="segitiga">
+            <div class="chooseDropdown">
+                <a href="../Clothes/Tops.html" class="chooseLink">TOPS WEAR</a>
+                <a href="../Clothes/Bottom.html" class="chooseLink">BOTTOMS WEAR</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content1">
+        <div class="product_baju" onclick="showPop(1)">
+            <img src="../Images/Baju6.jpeg" class="picture">
+            <div class="popUpContent" id="popUpId1">
+                <img src="../Images/Baju6.jpeg" class="picturePopUp">
+                Men’s T-shirt Respect
+                <br><br>
+                Rp. 60.000
+                <br><br>
+                For days on the move or nights on the town, this t-shirt lets everyone know whose team you play for. It's made of soft cotton jersey for all-day comfort.
+            </div>
+            <br>
+            <b>T-SHIRT</b>
+            <br>
+            Men’s T-shirt Respect M&T
+        </div>      
+        <div class="product_baju" onclick="showPop(2)">
+            <img src="../Images/Baju5.jpeg" class="picture">
+            <div class="popUpContent" id="popUpId2">
+                <img src="../Images/Baju5.jpeg" class="picturePopUp">
+                Men’s T-Shirt DON red
+                <br><br>
+                Rp. 60.000
+                <br><br>
+                Cozy and casual, this M&T tee is iconic as it comes. A small, embroidered Trefoil stands out on the chest as a mark of classic sport style.
+            </div>
+            <br>
+            <b>T-SHIRT</b>
+            <br>
+            Men’s T-shirt DON red M&T
+        </div>
+        <div class="product_baju" onclick="showPop(3)">
+            <img src="../Images/Baju4.jpg" class="picture">
+            <div class="popUpContent" id="popUpId3">
+                <img src="../Images/Baju4.jpg" class="picturePopUp">
+                Men’s Black Onyx Jacket 
+                <br><br>
+                Rp. 90.000
+                <br><br>
+                The warm-up suit is a staple. We don't just mean before a game — we're talking in culture. From film to music to sitting on the side of runways, it's become a recognizable symbol of ease. 
+            </div>
+            <br>
+            <b>JACKET</b>
+            <br>
+            Men’s Black Onyx Jacket
+        </div>
+        <div class="product_baju" onclick="showPop(4)">
+            <img src="../Images/Baju2.jpg" class="picture">
+            <div class="popUpContent" id="popUpId4">
+                <img src="../Images/Baju2.jpg" class="picturePopUp">
+                Men’s Polo Shirt Galaxy
+                <br><br>
+                Rp. 70.000
+                <br><br>
+                Authentic. Just like you. Bearing the mark of creators everywhere, this Polo shirt brings the vibes with a Trefoil and galaxy graphic on the front.Our cotton products support more sustainable cotton farming.
+            </div>
+            <br>
+            <b>POLO SHIRT</b>
+            <br>
+            Men’s Polo Shirt Galaxy
+        </div>
+    </div>
+     <div class="content2">
+        <div class="product_baju" onclick="showPop(5)">
+            <img src="../Images/Celana3.jpeg" class="picture">
+            <div class="popUpContent" id="popUpId5">
+                <img src="../Images/Celana3.jpeg" class="picturePopUp">
+                Long Pant Mocha Hunter
+                <br><br>
+                Rp. 50.000
+                <br><br>
+                PROUD TO WEAR LOCAL BRAND 100% The quality of the materials and the neatness of the stitches are on par with the goods in the show
+            </div>
+            <br>
+            <b>PANTS</b>
+            <br>
+            Long Pant Mocha Hunter
+        </div>
+        <div class="product_baju" onclick="showPop(6)">
+            <img src="../Images/Celana4.jpeg" class="picture">
+            <div class="popUpContent" id="popUpId6">
+                <img src="../Images/Celana4.jpeg" class="picturePopUp">
+                Jogging Pant Grey
+                <br><br>
+                Rp. 55.000
+                <br><br>
+                Feel good. Look good. Rooted in soccer heritage, the Jogging Pants perform on and off the pitch. Made to move, they keep you confident with moisture-absorbing AEROREADY. 
+            </div>
+            <br>
+            <b>PANTS</b>
+            <br>
+            Jogging Pant Grey
+        </div>
+        <div class="product_baju" onclick="showPop(7)">
+            <img src="../Images/Celana6.jpeg" class="picture">
+            <div class="popUpContent" id="popUpId7">
+                <img src="../Images/Celana6.jpeg" class="picturePopUp">
+                Short Pant Black Green
+                <br><br>
+                Rp. 40.000
+                <br><br>
+                Almost undetectable, the classic pattern adds color to the signature . And the soft fleece build? Well that just adds pure comfort. So settle in, feel good. These were made for exactly that.
+            </div>
+            <br>
+            <b>PANTS</b>
+            <br>
+            Short Pant Black Green
+        </div>
+        <div class="product_baju" onclick="showPop(8)">
+            <img src="../Images/Celana2.jpeg" class="picture">
+            <div class="popUpContent" id="popUpId8">
+                <img src="../Images/Celana2.jpeg " class="picturePopUp">
+                Gym Pant Yellow Thunder
+                <br><br>
+                Rp. 42.000
+                <br><br>
+                A compression fit supports muscles. AEROREADY wicks sweat for a quick-drying, fresh feel through every session, indoors or out.
+            </div>
+            <br>
+            <b>PANTS</b>
+            <br>
+            Gym Pant Yellow Thunder
+        </div>
+    </div>
+        <footer class="footer">
+            <div class="footerMenu">
+                <div class="footerLogo">
+                    <a href="https://www.instagram.com/" class="footerLink" target="_bs">
+                        <img src="../Images/LogoInstagramBlank.png" class="before">
+                        <img src="../Images/LogoInstagram.png" class = after>
+                    </a>
+                </div>
+                <div class="footerLogo">
+                    <a href="https://twitter.com/" class="footerLink" target="_blank">
+                        <img src="../Images/LogoTwitterBlank.png" class="before">
+                        <img src="../Images/LogoTwitter.png" class = after>
+                    </a>
+                </div>
+                <div class="footerLogo">
+                    <a href="https://www.youtube.com/" class="footerLink" target="_blank">
+                        <img src="../Images/LogoYoutubeBlank.png" class="before">
+                        <img src="../Images/LogoYoutube.png" class = after>
+                    </a>
+                </div>
+                <div class="footerLogo">
+                    <a href="https://web.whatsapp.com/" class="footerLink" target="_blank">
+                        <img src="../Images/LogoWhatAppBlank.png" class="before">
+                        <img src="../Images/LogoWhatsApp.png" class = after>
+                    </a>
+                </div>
+                <div class="copyRight">
+                    Copyright 2022
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

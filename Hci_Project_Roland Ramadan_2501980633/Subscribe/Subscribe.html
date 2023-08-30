@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="SubscribeStyle.css">
+    <script src="SubscribeScript.js"></script>
+</head>
+<body>
+    <nav class="header">
+        <div class="headerMenu">
+            <div class="headerText"><a href="../Home/Home.html" class="headerLink">M&T</a></div>
+            <div class="headerText"><a href="../Clothes/Clothes.html" class="headerLink">Clothes</a></div>
+            <div class="headerText"><a href="../AboutUs/AboutUs.html" class="headerLink">About Us</a></div>
+            <div class="headerText"><a href="../Location/Location.html" class="headerLink">Location</a></div>
+            <div class="headerText"><a href="../Subscribe/Subscribe.html" class="headerLink">Subscribe</a></div>
+        </div>
+        <div class="dropDownMenu">
+            <button class="dropDownButton">
+                <img class = "HamburgerIcon" src="../Images/HamburgerIcon.png">
+            </button>
+            <div class="dropDownTable">
+                <a href="../Home/Home.html">Home</a>
+                <a href="../Clothes/Clothes.html">Clothes</a>
+                <a href="../AboutUs/AboutUs.html">About Us</a>
+                <a href="../Location/Location.html">Location</a>
+                <a href="../Subscribe/Subscribe.html">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class = "awalan">Subscribe to Our Product</h1>
+
+    <div class = "content">
+        <div class="contentContainer">
+        <form id = "subscribeForm" name="subscribe">
+            <div class = "container">
+                <label>Name</label>
+                <input name="name" placeholder="Name">
+                <div id="error1" class = "errorMsg"></div>
+            </div>
+
+            <div class = "container">
+                <label>Email</label>
+                <input name="email" placeholder="Email">
+                <div id="error2" class = "errorMsg"></div>
+            </div>
+
+            <div class = "container">
+                <label>Phone Number</label>
+                <input name="phone" placeholder="Phone">
+                <div id="error3" class = "errorMsg"></div>
+            </div>
+            
+            <div class = "container">
+                <label>Country</label>
+                <select name="country" id="countryId">
+                    <option>Country</option>
+                    <option>Indonesia</option>
+                    <option>Malaysia</option>
+                    <option>Canada</option>
+                    <option>United States</option>
+                    <option>Brazil</option>
+                    <option>Singapore</option>
+                    <option>Thailand</option>
+                    <option>Egypt</option>
+                </select>
+                <div id="error4" class = "errorMsg"></div>
+            </div>
+            
+            <div class="agreeSubmit">
+                <input name="agreeBox" type="checkbox" id="myCheck">I agree to term and condition
+                <div id="error5" class = "errorMsg"></div>
+            </div>
+            
+            
+            <div class="submitBtn">
+                <input type="button" value="Submit" onclick="check()">
+            </div>
+            
+        </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footerMenu">
+            <div class="footerLogo">
+                <a href="https://www.instagram.com/" class="footerLink" target="_bs">
+                    <img src="../Images/LogoInstagramBlank.png" class="before">
+                    <img src="../Images/LogoInstagram.png" class = after>
+                </a>
+            </div>
+            <div class="footerLogo">
+                <a href="https://twitter.com/" class="footerLink" target="_blank">
+                    <img src="../Images/LogoTwitterBlank.png" class="before">
+                    <img src="../Images/LogoTwitter.png" class = after>
+                </a>
+            </div>
+            <div class="footerLogo">
+                <a href="https://www.youtube.com/" class="footerLink" target="_blank">
+                    <img src="../Images/LogoYoutubeBlank.png" class="before">
+                    <img src="../Images/LogoYoutube.png" class = after>
+                </a>
+            </div>
+            <div class="footerLogo">
+                <a href="https://web.whatsapp.com/" class="footerLink" target="_blank">
+                    <img src="../Images/LogoWhatAppBlank.png" class="before">
+                    <img src="../Images/LogoWhatsApp.png" class = after>
+                </a>
+            </div>
+            <div class="copyRight">
+                Copyright 2022
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

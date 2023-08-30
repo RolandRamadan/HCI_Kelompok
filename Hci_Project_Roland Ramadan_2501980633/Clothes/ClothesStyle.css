@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F9F3DF;
+    /* position: relative; */
+    max-width: 1600px;
+}
+
+.header {
+    font-size: 125%;
+    background-color: #476258;
+}
+
+.headerMenu{
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+.headerText{
+    font-family: 'Jacques Francois';
+}
+
+.headerMenu :first-child{
+    margin-right: auto;
+}
+
+.headerMenu :hover{
+    background-color: white;
+    color: #476258;
+    border-radius: 10px;
+}
+
+.headerLink {
+    padding: 2rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    display: block;
+}
+
+.dropDownMenu {
+    margin-left: 10px;
+    display: none;
+}
+
+.HamburgerIcon {
+    margin-top: 1px;
+    width: 25px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropDownTable {
+    background-color: #476258;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    min-width: 120px;
+}
+
+.dropDownTable a {
+    color: white;
+    padding: 10px 12px;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Jacques Francois';
+}
+
+.dropDownButton {
+    padding: 8px;
+    background-color: #476258;
+    cursor: pointer;
+    border: none;
+}
+
+.dropDownTable a:hover {
+    background-color: white;
+    color: #476258;
+    border-radius: 5px;
+}
+
+.dropDownMenu:hover .dropDownTable {
+    display: block;
+}
+
+.dropDownMenu:hover .dropDownTable {
+    background-color: #476258;
+}
+
+.footer{
+    position: relative;
+    margin-top: 100px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #9D897B;
+}
+
+.footerMenu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footerLogo{
+   margin: 5px 30px;
+   display: inline-block;
+}
+
+.before{
+    height: 50px; 
+    width: 50px;
+}
+
+.after{
+    height: 50px; 
+    width: 50px;
+}
+
+.footerLogo .after {
+    display: none;
+}
+
+.footerLogo :hover .after{
+    display: inline;
+}
+
+.footerLogo :hover .before{
+    display: none;
+}
+
+.copyRight{
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.content1{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.picture{
+    border: black solid 3px;
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.content2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 15px;
+}
+
+.choose{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 10rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size: larger;
+    background-color: white;
+}
+
+.chooseDropdown{
+    display: none;
+    background-color: white;
+}
+
+.choose :hover .chooseDropdown{
+    position: fixed;
+    display: block;
+}
+
+.chooseLink{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    border: black solid 2px;
+    display: block;
+}
+
+.popUpContent {
+    visibility: hidden;
+    width: 500px;
+    height: auto;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: #476258 solid 5px;
+    position: absolute;
+    display: block;
+    left: 550px;
+    top: 250px;
+    display: flex;
+    z-index: 1;
+}
+
+.product_baju .show {
+    visibility: visible;
+    position: absolutes;
+}
+
+.picturePopUp{
+    max-width: 200px;
+}
+
+.segitiga{
+    max-width: 39px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+@media screen and (max-width: 1250px){
+    .content1{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .content2{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 15px;
+    }
+    .popUpContent {
+        visibility: hidden;
+        width: 500px;
+        height: auto;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        border: #476258 solid 5px;
+        position: absolute;
+        display: block;
+        left: 300px;
+        top: 250px;
+        display: flex;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 800px){
+    .headerMenu{
+        flex-direction: column;
+        display: none;
+    }
+    .dropDownMenu {
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .content1{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .content2{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
+    .popUpContent {
+        visibility: hidden;
+        width: 500px;
+        height: auto;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        border: #476258 solid 5px;
+        position: absolute;
+        display: block;
+        left: 100px;
+        top: 250px;
+        display: flex;
+        z-index: 1;
+    }
+}
